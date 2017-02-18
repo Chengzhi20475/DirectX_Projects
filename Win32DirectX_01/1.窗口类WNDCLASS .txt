@@ -1,0 +1,31 @@
+
+窗口类WNDCLASS 
+
+struct WNDCLASS { 
+    UINT style; 
+    WNDPROC lpfnWndProc; 
+    int cbClsExtra; 
+    int cbWndExtra; 
+    HINSTANCE hInstance; 
+    HICON hIcon; 
+    HCURSOR hCursor; 
+    HBRUSH hbrBackground; 
+    LPCSTR lpszMenuName; 
+    LPCSTR lpszClassName; 
+}; 
+
+style：用来定义窗口的行为。如果打算共同使用GDI和D3D的话，可以使用CS_OWNDC作为参数。 
+
+lpfnWndProc：一个函数指针，指向与这个窗口类绑定在一起的处理窗口消息的函数。 
+
+cbClsExtra和cbWndExtra：为窗口和为分配内存空间。很少使用到这两个参数，一般设为0； 
+
+hInstance：应用程序的实例句柄。你可以使用GetModuleHandle()来得到它，也可以从Win32程序的入口函数WinMain那里得到它。当然，你也可以把它设为NULL（不知有什么用） 
+
+hIcon，hCursor，hbrBackground：设置默认的图标、鼠标、背景颜色。不过在这里设置这些其实并不怎么重要，因为我们可以在后面定制自己的渲染方法。 
+
+lpszMenuName：用来创建菜单 
+
+lpszClassName：窗口类的名字。我们可以通过这个名字来创建以这个窗口类为模板的窗口。甚至可以通过这个名字来得到窗口的句柄。 
+
+　　设置好窗口类结构的内容后，使用RegisterClass(const WNDCLASS *lpWndClass)函数来注册它。关闭窗口后可以用UnregisterClass(LPCSTR lpClassName, HINSTANCE hInstance)来撤销注册。 

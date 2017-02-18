@@ -1,0 +1,31 @@
+创建窗口CreateWindow 
+
+HWND CreateWindow( 
+    LPCTSTR lpClassName, 
+    LPCTSTR lpWindowName, 
+    DWORD dwStyle, 
+    int x, y, 
+    int nWidth, nHeight, 
+    HWND hWndParent, 
+    HMENU hMenu, 
+    HINSTANCE hInstance, 
+    LPVOID lpParam 
+); 
+
+lpClassName：窗口类的名字。即窗口类结构体中的lpszClassName成员。 
+
+lpWindowName：如果你的应用程序有标题栏，这个就是你标题栏上显示的内容。 
+
+dwStyle：窗口的风格决定你的窗口是否有标题栏、最大最小化按钮、窗口边框等属性。在全屏的模式下，WS_POPUP|WS_VISIBLE是常用的设置，因为它产生一个不带任何东西的全屏窗口。在窗口的模式下，你可以设置很多窗口的风格，具体可以查看相关资料，这里不详细说明，不过WS_OVERLAPPED|WS_SYSMENU|WS_VISIBLE是一组常用的风格。 
+
+x和y：窗口创建的位置。(x，y)表示窗口的左上角位置。 
+
+nWidth和nHeight：用来设置窗口的宽度和高度，以像素为单位。如果你想创建一个全屏的窗口，使用GetSystemMetrics(SM_CXSCREEN)和GetSystemMetrics(SM_CYSCREEN)可以得到当前显示器屏幕的大小 
+
+hWndParent：指定这个新建窗口的父窗口。在D3D应用程序中很少用，一般设为NULL。 
+
+hMenu：菜单句柄。 
+
+hInstance：应用程序的实例句柄。你可以使用GetModuleHandle()来得到它，也可以从Win32程序的入口函数WinMain那里得到它。当然，你也可以把它设为NULL（不知有什么用） 
+
+lpParam：一个很神秘的参数。除非你知道自己在做什么，否则还是把它设为NULL吧。 
