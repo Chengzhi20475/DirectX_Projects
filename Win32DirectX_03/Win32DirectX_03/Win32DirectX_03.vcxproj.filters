@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="WinMain">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{62672afb-0461-49cf-a66c-e87df57828fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\MainWindow">
+      <UniqueIdentifier>{8e4ec682-2d21-4ce5-a8f7-5d5aad059352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\EngineDirector">
+      <UniqueIdentifier>{b420adad-5739-4dad-9d87-9149ae0c40f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\MainDirect">
+      <UniqueIdentifier>{5e26d622-5a2e-49bf-9e86-312ae135730d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>GameEngine\MainWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDirector.h">
+      <Filter>GameEngine\EngineDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDirect.h">
+      <Filter>GameEngine\MainDirect</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>GameEngine\MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDirector.cpp">
+      <Filter>GameEngine\EngineDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDirect.cpp">
+      <Filter>GameEngine\MainDirect</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
