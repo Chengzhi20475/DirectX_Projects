@@ -25,6 +25,9 @@
     <Filter Include="GameEngine\MainDirect">
       <UniqueIdentifier>{5e26d622-5a2e-49bf-9e86-312ae135730d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameEngine\EngineNode">
+      <UniqueIdentifier>{48f6b3bb-7f24-43f0-bb9d-1ebbe8130e5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utility.h">
@@ -39,6 +42,9 @@
     <ClInclude Include="MainDirect.h">
       <Filter>GameEngine\MainDirect</Filter>
     </ClInclude>
+    <ClInclude Include="EngineNode.h">
+      <Filter>GameEngine\EngineNode</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainWindow.cpp">
@@ -52,6 +58,9 @@
     </ClCompile>
     <ClCompile Include="MainDirect.cpp">
       <Filter>GameEngine\MainDirect</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineNode.cpp">
+      <Filter>GameEngine\EngineNode</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

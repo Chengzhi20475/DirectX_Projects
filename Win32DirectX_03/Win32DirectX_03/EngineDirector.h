@@ -3,7 +3,6 @@
 #pragma once
 #include "Utility.h"
 
-
 class EngineDirector : public Singleton<EngineDirector>
 {
 public:

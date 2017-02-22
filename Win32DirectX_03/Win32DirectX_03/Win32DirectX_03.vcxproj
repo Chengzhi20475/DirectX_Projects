@@ -147,12 +147,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="EngineDirector.h" />
+    <ClInclude Include="EngineNode.h" />
     <ClInclude Include="MainDirect.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EngineDirector.cpp" />
+    <ClCompile Include="EngineNode.cpp" />
     <ClCompile Include="MainDirect.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="WinMain.cpp" />
