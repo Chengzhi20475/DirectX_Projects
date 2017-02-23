@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="EngineDirector.h" />
     <ClInclude Include="EngineNode.h" />
     <ClInclude Include="MainDirect.h" />
@@ -153,6 +154,7 @@
     <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="EngineDirector.cpp" />
     <ClCompile Include="EngineNode.cpp" />
     <ClCompile Include="MainDirect.cpp" />

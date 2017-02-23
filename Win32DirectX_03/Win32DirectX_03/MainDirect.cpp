@@ -6,6 +6,7 @@ MainDirect::MainDirect()
 {
 	m_pD3d = NULL;
 	m_pDevice = NULL;
+	m_pCamera = NULL;
 }
 
 
@@ -49,21 +50,25 @@ void MainDirect::onInit()
 	m_pDevice->SetRenderState(D3DRS_LIGHTING, FALSE);
 	m_pDevice->SetRenderState(D3DRS_ZENABLE, TRUE);
 
-	//----摄像机----
-	D3DXVECTOR3 vEyePt(0, 0, -10);
-	D3DXVECTOR3 vLookAt(0, 0, 0);
-	D3DXVECTOR3 vUp(0, 1, 0);
-	D3DXMATRIX matView;
-	D3DXMatrixIdentity(&matView);
-	D3DXMatrixLookAtLH(&matView, &vEyePt, &vLookAt, &vUp);
-	m_pDevice->SetTransform(D3DTS_VIEW, &matView);
+	////----摄像机----
+	m_pCamera = Camera::Create();
+	m_pCamera->setvEyePt(0.f, 0.f, -10.f);
+	m_pCamera->setvLookAt(0.f, 0.f, 0.f);
+	m_pCamera->setvUp(0.f, 1.f, 0.f);
+	//D3DXVECTOR3 vEyePt(0, 0, -10);
+	//D3DXVECTOR3 vLookAt(0, 0, 0);
+	//D3DXVECTOR3 vUp(0, 1, 0);
+	//D3DXMATRIX matView;
+	//D3DXMatrixIdentity(&matView);
+	//D3DXMatrixLookAtLH(&matView, &vEyePt, &vLookAt, &vUp);
+	//m_pDevice->SetTransform(D3DTS_VIEW, &matView);
 
-	//----透视投影矩阵----
-	D3DXMATRIX matProj;
-	D3DXMatrixIdentity(&matProj);
-	D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 3,
-		4.0f / 3.0f, 1.0f, 5000.0f);
-	m_pDevice->SetTransform(D3DTS_PROJECTION, &matProj);
+	////----透视投影矩阵----
+	//D3DXMATRIX matProj;
+	//D3DXMatrixIdentity(&matProj);
+	//D3DXMatrixPerspectiveFovLH(&matProj, D3DX_PI / 3,
+	//	4.0f / 3.0f, 1.0f, 5000.0f);
+	//m_pDevice->SetTransform(D3DTS_PROJECTION, &matProj);
 }
 
 void MainDirect::onBeginRender()
@@ -81,6 +86,8 @@ void MainDirect::onEndRender()
 
 void MainDirect::onExit()
 {
+
+
 	Safe_Release(m_pDevice);
 	Safe_Release(m_pD3d);
 }
