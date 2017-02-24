@@ -1,0 +1,13 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Win32DirectX_05.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MainDirect.cpp
+  EngineDirector.cpp
+  正在生成代码...
+  正在编译...
+  Camera.cpp
+  正在生成代码...
+  正在跳过...(未检测到相关更改)
+  WinMain.cpp
+  MainWindow.cpp
+  EngineNode.cpp
+  Win32DirectX_05.vcxproj -> F:\DirectXFrameWork\Win32DirectX_05\Debug\Win32DirectX_05_2DFont.exe
+  Win32DirectX_05.vcxproj -> F:\DirectXFrameWork\Win32DirectX_05\Debug\Win32DirectX_05_2DFont.pdb (Full PDB)

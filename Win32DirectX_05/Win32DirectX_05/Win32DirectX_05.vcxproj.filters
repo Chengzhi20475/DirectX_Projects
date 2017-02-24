@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="WinMain">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GameEngine\MainWindow">
+      <UniqueIdentifier>{99ca134e-3ec4-4bb3-9a0b-a068aecc09a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\MainDirect">
+      <UniqueIdentifier>{60b2b4ea-f215-4935-860d-902933aa5a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\EngineDirector">
+      <UniqueIdentifier>{86a037f5-08cd-4d88-8688-c28c9cfcb2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\EngineNode">
+      <UniqueIdentifier>{d72a339e-2865-455b-a92b-7c833503c914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Camera">
+      <UniqueIdentifier>{ea293c12-b0a7-48e0-a2bd-23d2fb9952fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>GameEngine\MainWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDirect.h">
+      <Filter>GameEngine\MainDirect</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDirector.h">
+      <Filter>GameEngine\EngineDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineNode.h">
+      <Filter>GameEngine\EngineNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>GameEngine\Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>GameEngine\MainWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDirect.cpp">
+      <Filter>GameEngine\MainDirect</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDirector.cpp">
+      <Filter>GameEngine\EngineDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineNode.cpp">
+      <Filter>GameEngine\EngineNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>GameEngine\Camera</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
