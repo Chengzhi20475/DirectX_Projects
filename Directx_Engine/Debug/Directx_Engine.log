@@ -1,0 +1,11 @@
+﻿  WinMain.cpp
+  Test.cpp
+  MainWindow.cpp
+  MainDirect.cpp
+  EngineNode.cpp
+  EngineLight.cpp
+  EngineDirector.cpp
+  Camera.cpp
+  正在生成代码...
+  Directx_Engine.vcxproj -> E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe
+  Directx_Engine.vcxproj -> E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.pdb (Full PDB)
