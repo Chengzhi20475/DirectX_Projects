@@ -58,9 +58,15 @@ bool EngineLight::InitWithLightType(LightType _type)
 		MessageBox(NULL, TEXT("Light type Nothing"), TEXT("Create Light Error..."), MB_OK);
 		break;
 	case Light_Directional:
-
+		m_Light.Type = D3DLIGHT_DIRECTIONAL;
+		m_Light.Diffuse.r = 1.0f;
+		m_Light.Diffuse.g = m_Light.Diffuse.b = m_Light.Diffuse.a = 0.0f;
+		m_Light.Specular.r = m_Light.Specular.g = m_Light.Specular.b = m_Light.Specular.a = 1.0f;
+		m_Light.Ambient.r = m_Light.Ambient.g = m_Light.Ambient.b = m_Light.Ambient.a = 0.0f;
+		m_Light.Direction = D3DXVECTOR3(-1, 0, 0);
 		break;
 	case Light_Point:
+
 		break;
 	case Light_Spot:
 		break;

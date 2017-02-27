@@ -60,7 +60,7 @@ void EngineDirector::onInit()
 	m_pTest->setLocalPos(D3DXVECTOR3(0, 0, 0));
 	m_pTest1 = Test::Create();
 	m_pTest1->setLocalPos(D3DXVECTOR3(5, 0, 0));
-	//m_pTest->addChild(m_pTest1);
+	m_pTest->addChild(m_pTest1);
 	
 }
 
@@ -68,8 +68,8 @@ void EngineDirector::onLogic(float fElapsedTime)
 {
 	static float fangle = 0.0f;
 	fangle += fElapsedTime;
-	m_pTest->setLocalRota(D3DXVECTOR3(0, 4.0f * sin(fangle), 0));
-	m_pTest1->setLocalRota(D3DXVECTOR3(0, 4.0f * sin(fangle), 0));
+	m_pTest->setLocalRota(D3DXVECTOR3(0, 4.0f * fangle, 0));
+	m_pTest1->setLocalRota(D3DXVECTOR3(0, 4.0f * fangle, 0));
 }
 
 void EngineDirector::onRender(float fElapsedTime)
