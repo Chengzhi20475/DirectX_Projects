@@ -25,8 +25,6 @@ public:
 	bool InitWithLightType(LightType _type);
 	D3DLIGHT9 getLight()const { return m_Light; }
 
-	virtual void Render();
-
 };
 
 #endif

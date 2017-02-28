@@ -5,6 +5,7 @@
 Test::Test()
 {
 	m_pTeapot = NULL;
+	ZeroMemory(&m_matTeapot, sizeof(D3DMATERIAL9));
 }
 
 
@@ -30,6 +31,19 @@ bool Test::Init()
 {
 	if (!EngineNode::Init())
 		return false;
+
+	m_matTeapot.Diffuse.r = 1.0f;	//红色全反射
+	m_matTeapot.Diffuse.g = 1.0f;	//绿色全反射
+	m_matTeapot.Diffuse.b = 1.0f;	//蓝色全反射
+	m_matTeapot.Diffuse.a = 1.0f;
+
+	m_matTeapot.Specular.r = 1.0f;	//红色全反射
+	m_matTeapot.Specular.g = 1.0f;	//绿色全反射
+	m_matTeapot.Specular.b = 1.0f;	//蓝色全反射
+	m_matTeapot.Specular.a = 1.0f;
+	m_matTeapot.Power = 0.2f;		//越大，高光区域越小
+
+	MainDirect::GetSingletonPtr()->getD3dDevice()->SetMaterial(&m_matTeapot);
 
 	D3DXCreateTeapot(
 		MainDirect::GetSingletonPtr()->getD3dDevice(),

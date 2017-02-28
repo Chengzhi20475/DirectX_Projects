@@ -7,6 +7,9 @@ EngineDirector::EngineDirector()
 	m_pCamera = NULL;
 	m_pTest = NULL;
 	m_pTest1 = NULL;
+	m_directional = NULL;
+	m_point = NULL;
+	m_spot = NULL;
 }
 
 
@@ -54,14 +57,27 @@ void EngineDirector::onInit()
 	m_pCamera->setvEyePt(0.f, 6.f, 10.f);
 	m_pCamera->setvLookAt(0.f, 0.f, 0.f);
 	m_pCamera->setvUp(0.f, 1.f, 0.f);
-	//----------------------------------
+	//-----------test---------------
 	
 	m_pTest = Test::Create();
 	m_pTest->setLocalPos(D3DXVECTOR3(0, 0, 0));
 	m_pTest1 = Test::Create();
 	m_pTest1->setLocalPos(D3DXVECTOR3(5, 0, 0));
 	m_pTest->addChild(m_pTest1);
-	
+	//----------------------------------
+	m_directional = EngineLight::CreateWithLightType(Light_Directional);
+	m_point = EngineLight::CreateWithLightType(Light_Point);
+	m_spot = EngineLight::CreateWithLightType(Light_Spot);
+
+	MainDirect::GetSingletonPtr()->getD3dDevice()->SetLight(0, &(m_directional->getLight()));
+	MainDirect::GetSingletonPtr()->getD3dDevice()->LightEnable(0, true);
+
+	//MainDirect::GetSingletonPtr()->getD3dDevice()->SetLight(1, &(m_point->getLight()));
+	//MainDirect::GetSingletonPtr()->getD3dDevice()->LightEnable(1, true);
+
+	//MainDirect::GetSingletonPtr()->getD3dDevice()->SetLight(2, &(m_spot->getLight()));
+	//MainDirect::GetSingletonPtr()->getD3dDevice()->LightEnable(2, true);
+	//-----------test---------------
 }
 
 void EngineDirector::onLogic(float fElapsedTime)
@@ -79,8 +95,7 @@ void EngineDirector::onRender(float fElapsedTime)
 	m_pCamera->Visit();
 	m_pTest->Visit();
 	m_pTest1->Visit();
-
-
+	
 
 	//-----------------------------------
 	MainDirect::GetSingletonPtr()->onEndRender();

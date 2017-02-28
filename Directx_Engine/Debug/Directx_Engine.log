@@ -1,11 +1,6 @@
-﻿  WinMain.cpp
-  Test.cpp
-  MainWindow.cpp
-  MainDirect.cpp
-  EngineNode.cpp
-  EngineLight.cpp
-  EngineDirector.cpp
-  Camera.cpp
+﻿  EngineDirector.cpp
   正在生成代码...
-  Directx_Engine.vcxproj -> E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe
-  Directx_Engine.vcxproj -> E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.pdb (Full PDB)
+  正在跳过...(未检测到相关更改)
+  WinMain.cpp
+  Directx_Engine.vcxproj -> C:\Users\YUNJIHUDONG\Documents\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe
+  Directx_Engine.vcxproj -> C:\Users\YUNJIHUDONG\Documents\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.pdb (Full PDB)
