@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="WinMain">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="EngineFrameWork2D">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineDirector">
+      <UniqueIdentifier>{0c26933c-626d-49ea-93d0-36f83b4b2f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineDirect">
+      <UniqueIdentifier>{b3db1446-aa78-4663-b85d-d4238ae37a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineWindow">
+      <UniqueIdentifier>{9a9b0bc5-55aa-48ba-a8c9-897f49fcc130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineNode">
+      <UniqueIdentifier>{077f1013-0ec0-46cd-b26b-a2795aee3ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineScene">
+      <UniqueIdentifier>{329e1cd7-ab35-4cd3-850f-fca327f51ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine2D">
+      <UniqueIdentifier>{624ca813-2ca3-41a9-850d-2b9c3a3ae096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineLayer">
+      <UniqueIdentifier>{d0e7f05b-3b4f-4523-a056-75b610697932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineTexture2D">
+      <UniqueIdentifier>{c3ad4669-fc1b-4cd4-a71f-71abe6430a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineTextureCache">
+      <UniqueIdentifier>{e730840e-7a7d-4195-9b2a-39973409d8bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork2D\EngineSprite">
+      <UniqueIdentifier>{e9e0f8b8-92d0-49dc-a696-a3dc752e75bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDirector.h">
+      <Filter>EngineFrameWork2D\EngineDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDirect.h">
+      <Filter>EngineFrameWork2D\EngineDirect</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineWindow.h">
+      <Filter>EngineFrameWork2D\EngineWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineNode.h">
+      <Filter>EngineFrameWork2D\EngineNode</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineScene.h">
+      <Filter>EngineFrameWork2D\EngineScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine2D.h">
+      <Filter>Engine2D</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLayer.h">
+      <Filter>EngineFrameWork2D\EngineLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTexture2D.h">
+      <Filter>EngineFrameWork2D\EngineTexture2D</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTextureCache.h">
+      <Filter>EngineFrameWork2D\EngineTextureCache</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSprite.h">
+      <Filter>EngineFrameWork2D\EngineSprite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDirector.cpp">
+      <Filter>EngineFrameWork2D\EngineDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDirect.cpp">
+      <Filter>EngineFrameWork2D\EngineDirect</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineWindow.cpp">
+      <Filter>EngineFrameWork2D\EngineWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineNode.cpp">
+      <Filter>EngineFrameWork2D\EngineNode</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineScene.cpp">
+      <Filter>EngineFrameWork2D\EngineScene</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineLayer.cpp">
+      <Filter>EngineFrameWork2D\EngineLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineTexture2D.cpp">
+      <Filter>EngineFrameWork2D\EngineTexture2D</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineTextureCache.cpp">
+      <Filter>EngineFrameWork2D\EngineTextureCache</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSprite.cpp">
+      <Filter>EngineFrameWork2D\EngineSprite</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
