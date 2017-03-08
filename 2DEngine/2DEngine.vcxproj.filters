@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="WinMain">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="EngineFrameWork">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineDirect">
+      <UniqueIdentifier>{1b2ecfe2-d63c-4ebe-a535-c4bdc14ad42f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineDirector">
+      <UniqueIdentifier>{9642651a-9be8-4758-99d0-0bf34cbd8d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineLayer">
+      <UniqueIdentifier>{ac692324-f444-49b6-8bf6-ee3a9993b0c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineNode">
+      <UniqueIdentifier>{5aeb06f5-6f64-41ca-9a75-023508713a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineScene">
+      <UniqueIdentifier>{6340a5d9-f744-40d6-8db3-a07da33134a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineSprite">
+      <UniqueIdentifier>{71ec6f13-16ec-4b96-895a-9ffe5201e68b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineTexture2D">
+      <UniqueIdentifier>{8dcb087e-c6cc-4170-84b6-2f4514964e74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineTextureCache">
+      <UniqueIdentifier>{50c006a0-9d05-473b-8e1f-41609b79dee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineFrameWork\EngineWindow">
+      <UniqueIdentifier>{b8d9bfdf-066e-4a10-9105-6c719f82e5cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLayer">
+      <UniqueIdentifier>{201df76f-ca60-43e6-ba93-0d7d222f3eab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDirect.h">
+      <Filter>EngineFrameWork\EngineDirect</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDirector.h">
+      <Filter>EngineFrameWork\EngineDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLayer.h">
+      <Filter>EngineFrameWork\EngineLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineNode.h">
+      <Filter>EngineFrameWork\EngineNode</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineScene.h">
+      <Filter>EngineFrameWork\EngineScene</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSprite.h">
+      <Filter>EngineFrameWork\EngineSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTexture2D.h">
+      <Filter>EngineFrameWork\EngineTexture2D</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTextureCache.h">
+      <Filter>EngineFrameWork\EngineTextureCache</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineWindow.h">
+      <Filter>EngineFrameWork\EngineWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLayer.h">
+      <Filter>GameLayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDirect.cpp">
+      <Filter>EngineFrameWork\EngineDirect</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDirector.cpp">
+      <Filter>EngineFrameWork\EngineDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineLayer.cpp">
+      <Filter>EngineFrameWork\EngineLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineNode.cpp">
+      <Filter>EngineFrameWork\EngineNode</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineScene.cpp">
+      <Filter>EngineFrameWork\EngineScene</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSprite.cpp">
+      <Filter>EngineFrameWork\EngineSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineTexture2D.cpp">
+      <Filter>EngineFrameWork\EngineTexture2D</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineTextureCache.cpp">
+      <Filter>EngineFrameWork\EngineTextureCache</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineWindow.cpp">
+      <Filter>EngineFrameWork\EngineWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLayer.cpp">
+      <Filter>GameLayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

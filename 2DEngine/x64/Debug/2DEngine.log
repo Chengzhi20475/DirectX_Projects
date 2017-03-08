@@ -1,0 +1,27 @@
+﻿  WinMain.cpp
+  EngineWindow.cpp
+  EngineTextureCache.cpp
+e:\framework\2dengine\enginesprite.h(13): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+e:\framework\2dengine\enginesprite.h(13): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+e:\framework\2dengine\enginesprite.h(13): error C2238: 意外的标记位于“;”之前
+  EngineTexture2D.cpp
+e:\framework\2dengine\enginetexturecache.h(9): error C2065: “EngineTexture2D”: 未声明的标识符
+e:\framework\2dengine\enginetexturecache.h(9): error C2059: 语法错误:“>”
+e:\framework\2dengine\enginetexturecache.h(9): error C2976: “std::map”: 模板 参数太少
+  d:\program files (x86)\microsoft visual studio 14.0\vc\include\map(72): note: 参见“std::map”的声明
+e:\framework\2dengine\enginetexturecache.h(15): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+e:\framework\2dengine\enginetexturecache.h(15): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+e:\framework\2dengine\enginetexturecache.h(15): error C2238: 意外的标记位于“;”之前
+e:\framework\2dengine\enginetexturecache.h(17): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+e:\framework\2dengine\enginetexturecache.h(17): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+e:\framework\2dengine\enginetexturecache.h(17): error C2238: 意外的标记位于“;”之前
+e:\framework\2dengine\enginesprite.h(13): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+e:\framework\2dengine\enginesprite.h(13): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+e:\framework\2dengine\enginesprite.h(13): error C2238: 意外的标记位于“;”之前
+  EngineSprite.cpp
+  EngineScene.cpp
+  EngineNode.cpp
+  EngineLayer.cpp
+  EngineDirector.cpp
+  EngineDirect.cpp
+  正在生成代码...

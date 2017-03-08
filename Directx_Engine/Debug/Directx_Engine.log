@@ -1,3 +1,12 @@
-﻿  LINK : 没有找到 C:\Users\YUNJIHUDONG\Documents\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe 或上一个增量链接没有生成它；正在执行完全链接
-  Directx_Engine.vcxproj -> C:\Users\YUNJIHUDONG\Documents\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe
-  Directx_Engine.vcxproj -> C:\Users\YUNJIHUDONG\Documents\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.pdb (Full PDB)
+﻿  WinMain.cpp
+  Test.cpp
+  MainWindow.cpp
+  MainDirect.cpp
+  EngineNode.cpp
+  EngineLight.cpp
+  EngineDirector.cpp
+  Camera.cpp
+  正在生成代码...
+  LINK : 没有找到 E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe 或上一个增量链接没有生成它；正在执行完全链接
+  Directx_Engine.vcxproj -> E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.exe
+  Directx_Engine.vcxproj -> E:\GitHub\DirectX_Projects\Directx_Engine\Debug\Directx_Engine.pdb (Full PDB)

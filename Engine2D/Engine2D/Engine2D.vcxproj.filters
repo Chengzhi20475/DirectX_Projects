@@ -43,6 +43,9 @@
     <Filter Include="EngineFrameWork2D\EngineSprite">
       <UniqueIdentifier>{e9e0f8b8-92d0-49dc-a696-a3dc752e75bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameLayer">
+      <UniqueIdentifier>{b1df363c-5c7c-4f14-9b84-88aa2b49fac2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utility.h">
@@ -78,6 +81,9 @@
     <ClInclude Include="EngineSprite.h">
       <Filter>EngineFrameWork2D\EngineSprite</Filter>
     </ClInclude>
+    <ClInclude Include="GameLayer.h">
+      <Filter>GameLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -109,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="EngineSprite.cpp">
       <Filter>EngineFrameWork2D\EngineSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLayer.cpp">
+      <Filter>GameLayer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

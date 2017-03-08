@@ -6,6 +6,7 @@ EngineDirect::EngineDirect()
 {
 	m_pD3d = NULL;
 	m_pDevice = NULL;
+	m_pSprite = NULL;
 }
 
 
@@ -45,6 +46,9 @@ void EngineDirect::onInit()
 		OutputDebugString(TEXT("Create D3dDevice Error..."));
 		return;
 	}
+
+	D3DXCreateSprite(m_pDevice, &m_pSprite);
+
 	//----³õÊ¼äÖÈ¾×´Ì¬----
 	m_pDevice->SetRenderState(D3DRS_LIGHTING, FALSE);				//ÊÇ·ñ¿ªÆô¹âÕÕÔËËã
 	m_pDevice->SetRenderState(D3DRS_ZENABLE, TRUE);					//
@@ -58,16 +62,19 @@ void EngineDirect::onBeginRender()
 	m_pDevice->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER,
 		D3DCOLOR_ARGB(255, 123, 123, 123), 1.0f, 0);
 	m_pDevice->BeginScene();
+	m_pSprite->Begin(D3DXSPRITE_ALPHABLEND);
 }
 
 void EngineDirect::onEndRender()
 {
+	m_pSprite->End();
 	m_pDevice->EndScene();
 	m_pDevice->Present(NULL, NULL, NULL, NULL);
 }
 
 void EngineDirect::onExit()
 {
+	Safe_Release(m_pSprite);
 	Safe_Release(m_pDevice);
 	Safe_Release(m_pD3d);
 }

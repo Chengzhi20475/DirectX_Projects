@@ -1,15 +1,1 @@
-﻿  EngineTextureCache.cpp
-  EngineSprite.cpp
-  EngineLayer.cpp
-  正在生成代码...
-  正在编译...
-  WinMain.cpp
-  EngineWindow.cpp
-  EngineTexture2D.cpp
-  EngineScene.cpp
-  EngineNode.cpp
-  EngineDirector.cpp
-  EngineDirect.cpp
-  正在生成代码...
-  Engine2D.vcxproj -> F:\DirectXFrameWork\Engine2D\Debug\Engine2D.exe
-  Engine2D.vcxproj -> F:\DirectXFrameWork\Engine2D\Debug\Engine2D.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppClean.targets(76,5): warning : 文件“e:\github\directx_projects\engine2d\engine2d\debug\winmain.obj”正由另一进程使用，因此该进程无法访问此文件。

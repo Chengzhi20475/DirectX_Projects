@@ -9,16 +9,17 @@
 class EngineSprite	: public EngineNode
 {
 protected:
-	EngineTexture2D * m_pTexture2D;		//
+	EngineTexture2D * m_pTexture2D;
 public:
 	EngineSprite();
 	virtual ~EngineSprite();
 
 	static EngineSprite * Create();
-	static EngineSprite * CreateWithFileName();
+	static EngineSprite * CreateWithFileName(LPCTSTR _fileName);
 	virtual bool onInit();
-	bool initWithFileName();
+	bool initWithFileName(LPCTSTR _fileName);
 	virtual Size getContentSize();
+	virtual void onRender();
 
 };
 

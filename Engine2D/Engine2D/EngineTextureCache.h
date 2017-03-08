@@ -1,6 +1,7 @@
 #ifndef EngineTextureCache_H_
 #define EngineTextureCache_H_
 #pragma once
+#include "Utility.h"
 #include "EngineTexture2D.h"
 class EngineTextureCache : public Singleton<EngineTextureCache>
 {
