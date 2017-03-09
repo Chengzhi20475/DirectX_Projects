@@ -4,6 +4,8 @@
 
 GameLayer::GameLayer()
 {
+	m_pTeapot = NULL;
+	m_pTeapotChild = NULL;
 }
 
 
@@ -44,15 +46,22 @@ bool GameLayer::onInit()
 	if (!EngineLayer::onInit())
 		return false;
 
-	EngineSprite *pBg = EngineSprite::CreateWithFileName(TEXT("Resource\\BG.png"));
-	Size sizebg = pBg->getContentSize();
-	this->addChild(pBg);
+	m_pTeapot = ObjectTeapot::Create();
+	m_pTeapot->setLocalPos(D3DXVECTOR3(0, 0, 0));
+	this->addChild(m_pTeapot);
 
-	EngineSprite *pbtn = EngineSprite::CreateWithFileName(TEXT("Resource\\btn.png"));
-	Size sizebtn = pbtn->getContentSize();
-	this->addChild(pbtn);
-
-	
+	m_pTeapotChild = ObjectTeapot::Create();
+	m_pTeapotChild->setLocalPos(D3DXVECTOR3(4, 0, 0));
+	m_pTeapot->addChild(m_pTeapotChild);
+	this->setUpdate(true);
 
 	return true;
+}
+
+void GameLayer::onUpdate()
+{
+	static float fangle = 0.0f;
+	fangle += 0.05f;
+	m_pTeapot->setLocalRota(D3DXVECTOR3(0,fangle, 0));
+	m_pTeapotChild->setLocalRota(D3DXVECTOR3(0, fangle, 0));
 }

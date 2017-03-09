@@ -3,11 +3,13 @@
 #pragma once
 #include "Engine2D.h"
 #include "GameLayer.h"
+#include "EngineCamera.h"
 class EngineDirector : public Singleton<EngineDirector>		//Director类为单利模式 模仿Cocos2d 负责场景调度
 {
 protected:
 	//当前运行的场景根节点
 	EngineNode * m_pCurrentSceneNode;
+	EngineCamera * m_pCamera;
 public:
 	EngineDirector();
 	~EngineDirector();

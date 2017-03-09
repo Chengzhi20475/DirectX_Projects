@@ -21,6 +21,7 @@
 #include <vector>									//C++常用STL 头文件
 #include <string>
 #include <map>
+#include <iostream>
 #endif
 
 #ifndef Safe_Delete_Tools_							//安全释放模板

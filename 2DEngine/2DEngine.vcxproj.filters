@@ -43,6 +43,12 @@
     <Filter Include="GameLayer">
       <UniqueIdentifier>{201df76f-ca60-43e6-ba93-0d7d222f3eab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EngineFrameWork\EngineCamera">
+      <UniqueIdentifier>{c31b72af-36fc-4e67-b913-19c32ceee64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectTeapot">
+      <UniqueIdentifier>{2d029654-bda7-487b-90fa-40b74c646eff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utility.h">
@@ -78,6 +84,12 @@
     <ClInclude Include="GameLayer.h">
       <Filter>GameLayer</Filter>
     </ClInclude>
+    <ClInclude Include="EngineCamera.h">
+      <Filter>EngineFrameWork\EngineCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectTeapot.h">
+      <Filter>ObjectTeapot</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -112,6 +124,12 @@
     </ClCompile>
     <ClCompile Include="GameLayer.cpp">
       <Filter>GameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineCamera.cpp">
+      <Filter>EngineFrameWork\EngineCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectTeapot.cpp">
+      <Filter>ObjectTeapot</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

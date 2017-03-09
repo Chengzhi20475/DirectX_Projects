@@ -5,6 +5,7 @@
 EngineDirector::EngineDirector()
 {
 	m_pCurrentSceneNode = NULL;
+	m_pCamera = NULL;
 }
 
 
@@ -46,6 +47,11 @@ void EngineDirector::onInit()
 	EngineWindow::GetSingletonPtr()->onInit(SetSize(800, 600));
 	EngineDirect::GetSingletonPtr()->onInit();
 	
+	m_pCamera = EngineCamera::Create();
+	m_pCamera->setvEyePt(0.f, 8.f, 8.f);
+	m_pCamera->setvLookAt(0.f, 0.f, 0.f);
+	m_pCamera->setvUp(0.f, 1.f, 0.f);
+
 	this->RunWithScene(GameLayer::Scene());
 }
 
@@ -58,7 +64,7 @@ void EngineDirector::onRender(float fElapsedTime)
 {
 	EngineDirect::GetSingletonPtr()->onBeginRender();
 	//--------------------test-----------------------
-
+	m_pCamera->onVisit();
 	m_pCurrentSceneNode->onVisit();
 
 

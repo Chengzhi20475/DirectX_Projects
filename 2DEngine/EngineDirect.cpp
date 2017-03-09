@@ -47,14 +47,15 @@ void EngineDirect::onInit()
 		return;
 	}
 
-	D3DXCreateSprite(m_pDevice, &m_pSprite);
-
 	//----初始渲染状态----
 	m_pDevice->SetRenderState(D3DRS_LIGHTING, FALSE);				//是否开启光照运算
 	m_pDevice->SetRenderState(D3DRS_ZENABLE, TRUE);					//
-	//m_pDevice->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);	//线框模式渲染
-	m_pDevice->SetRenderState(D3DRS_SPECULARENABLE, TRUE);			//
-	m_pDevice->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);		//
+	m_pDevice->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);	//线框模式渲染
+	//m_pDevice->SetRenderState(D3DRS_SPECULARENABLE, TRUE);
+	//m_pDevice->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);
+
+	//D3DXCreateSprite(m_pDevice, &m_pSprite);
+
 }
 
 void EngineDirect::onBeginRender()
@@ -62,12 +63,12 @@ void EngineDirect::onBeginRender()
 	m_pDevice->Clear(0, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER,
 		D3DCOLOR_ARGB(255, 123, 123, 123), 1.0f, 0);
 	m_pDevice->BeginScene();
-	m_pSprite->Begin(D3DXSPRITE_ALPHABLEND);
+	//m_pSprite->Begin(D3DXSPRITE_ALPHABLEND);
 }
 
 void EngineDirect::onEndRender()
 {
-	m_pSprite->End();
+	//m_pSprite->End();
 	m_pDevice->EndScene();
 	m_pDevice->Present(NULL, NULL, NULL, NULL);
 }

@@ -30,7 +30,7 @@ EngineNode * EngineNode::Create()
 	EngineNode * pNode = new EngineNode();
 	if (pNode && pNode->onInit())
 	{
-		OutputDebugString(TEXT("EngineNode::Create() Called..\n"));
+		OutputDebugString(TEXT("EngineNode::Create() Called...\n"));
 	}
 	else
 		Safe_Delete(pNode);

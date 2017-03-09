@@ -46,11 +46,11 @@ void MainDirect::onInit()
 		return;
 	}
 	//----初始渲染状态----
-	m_pDevice->SetRenderState(D3DRS_LIGHTING, TRUE);				//是否开启光照运算
+	//m_pDevice->SetRenderState(D3DRS_LIGHTING, TRUE);				//是否开启光照运算
 	m_pDevice->SetRenderState(D3DRS_ZENABLE, TRUE);					//
-	//m_pDevice->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);	//线框模式渲染
-	m_pDevice->SetRenderState(D3DRS_SPECULARENABLE, TRUE);			//
-	m_pDevice->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);		//
+	m_pDevice->SetRenderState(D3DRS_FILLMODE, D3DFILL_WIREFRAME);	//线框模式渲染
+	//m_pDevice->SetRenderState(D3DRS_SPECULARENABLE, TRUE);			//
+	//m_pDevice->SetRenderState(D3DRS_NORMALIZENORMALS, TRUE);		//
 	//---光照模型---
 	//物体颜色总和 = 物体反射环境光 + 物体反射漫反射光 + 物体反射镜面反射光 + 自发光
 	//画在屏幕上的物体  受以上四种光影响
